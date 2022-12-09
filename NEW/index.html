@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XE TANK DI CHUYỂN</title>
+</head>
+<body>
+    <h1> CHương trình game xe tank hoạt động  0,</h1>
+    <img id ="tank" src="img/Up.PNG" height="138" width="174"/><br><br><br>
+    <button type="button" onclick="moveLeft()">MoveLeft</button>
+    <button type="button" onclick="moveRight()">MoveRight</button>
+    <button type="button" onclick="moveUp()">MoveUP</button>
+    <button type="button" onclick="moveDown()">MoveDown</button>
+
+<script>
+    let tank= document.getElementById('tank')
+    function init () {
+        tank.style.position = "relative"
+        tank.style.left = 0 + 'px'
+        tank.style.top = 0 + 'px'
+    }
+    init();
+    function moveRight() {
+        tank.src ='img/Right.PNG'
+        tank.style.left= parseInt(tank.style.left) +  20 + 'px'
+    }
+    function moveLeft() {
+        tank.src ='img/Left.PNG'
+        tank.style.left= parseInt(tank.style.left) -  20 + 'px'
+    }
+    function moveUp() {
+        tank.src ='img/UP.PNG'
+        tank.style.top= parseInt(tank.style.top) -  20 + 'px'
+    }
+    function moveDown() {
+        tank.src ='img/Down.PNG'
+        tank.style.top= parseInt(tank.style.top) +  20 + 'px'
+    }
+    function selectionKeyBoard(event) {
+        console.log('event --->',event)
+        switch (event.keyCode) {
+            case 38:
+                moveUp();
+                break;
+            case 37:
+                moveLeft();
+                break;
+            case 39:
+                moveRight();
+                break;
+            case 40:
+                moveDown();
+                break;
+        }
+    }
+    addEventListener('keydown',selectionKeyBoard)
+</script>
+</body>
+</html>

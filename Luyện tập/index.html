@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập 6.2</title>
+    <script src="java.js"></script>
+</head>
+<body>
+<!--Bài 7 trong phần luyện tập-->
+<h1>Tính cước điện thoại</h1>
+
+<h3 id = "output"></h3>
+<h3>Nhập vào số phút gọi điện</h3>
+<input type="text" id ="input">
+<button onclick="check()">Check</button>
+
+<script>
+    function check() {
+        let input = +document.getElementById('input').value
+        result = input * 200
+
+        document.getElementById('output').innerHTML = input + ' bằng ' + result + 'VND'
+    }
+</script>
+
+
+<!--Bài 6 trong phần luyện tập-->
+<!--    <h1>Doanh thu hoa hồng nhận được trong sản phẩm</h1>-->
+<!--    <h3 id="output"></h3>-->
+<!--    <table>-->
+<!--       <tr>-->
+<!--           <td>Số tiền sản phẩm  <input type="text" id ="input"></td>-->
+<!--           <td> Số phần trăm sản phẩm  <input type="text" id ="input1"></td>-->
+<!--           <td> <button onclick="doanhThu()">Doanh thu</button></td>-->
+<!--       </tr>-->
+<!--    </table>-->
+
+
+
+
+    <!--Bài 5 trong phần luyện tập -->
+<!--<h1>Xếp hạng học lực học sinh</h1>-->
+<!--<h3 id ="output"></h3>-->
+<!--<table>-->
+<!--    <tr>-->
+<!--        <td>-->
+<!--            Nhập điểm thi giữa kỳ-->
+<!--            <input type="text" id ="input1">-->
+<!--        </td>-->
+<!--        <td>-->
+<!--            Nhập điểm thi cuối kỳ-->
+<!--            <input type="text" id ="input2">-->
+<!--        </td>-->
+<!--        <td><button onclick="check()">Kiểm tra xếp hạng </button></td>-->
+<!--    </tr>-->
+<!--</table>-->
+
+<!--Bài 4 trong phần luyện tập-->
+<!--<h1>Nhập vào số nguyên tìm số lớn nhất</h1>-->
+<!--<table>-->
+<!--    <tr>-->
+<!--        <td id ="output"></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td><input type="text" id="input1"></td>-->
+<!--        <td><input type="text" id="input2"></td>-->
+<!--        <td><input type="text" id="input3"></td>-->
+<!--        <td> <button type="button" onclick="checkNumber()">check</button></td>-->
+<!--    </tr>-->
+
+<!--</table>-->
+
+<!--&lt;!&ndash;67&ndash;&gt;-->
+<!--&lt;!&ndash;    <h1>Nhập độ tuổi đủ điều kiện học cấp 3</h1>&ndash;&gt;-->
+<!--// &lt;!&ndash;    <div id = "output"></div>&ndash;&gt;-->
+<!--// &lt;!&ndash;    <input type="text" id="input">&ndash;&gt;-->
+<!--//     &lt;!&ndash;    <button onclick="check()">CHECK</button>&ndash;&gt;-->
+</body>
+</html>

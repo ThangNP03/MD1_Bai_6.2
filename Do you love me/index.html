@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DoyouloveME</title>
+</head>
+<body>
+<h1 style="text-align: center">Có đi chơi không men?</h1>
+<input style="position:absolute;left: 285px;top:235px;" type="button" value=" TẤT NHIÊN LÀ ĐI RỒI" onclick="yesButton()">
+<input style="position:absolute;left: 360px;top:235px;" id="btnNo" type="button" value="  ĐÉO  " onmouseover="noHover()">
+<script>
+  function yesButton() {
+    document.write("OK!");
+  }
+
+  function noHover() {
+    let x = Math.round(Math.random() * window.innerWidth);
+    let y = Math.round(Math.random() * window.innerHeight);
+    document.getElementById("btnNo").style.left = x + 'px';
+    document.getElementById("btnNo").style.top = y + 'px';
+  }
+</script>
+</body>
+</html>

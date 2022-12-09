@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BMI</title>
+</head>
+<body>
+    <h1>CHƯƠNG TRÌNH TÍNH BMI </h1>
+    <div id = "output"></div>
+    <br>
+    <div>HEIGHT <input id="height"></div>
+    <br>
+    <div>WEIGHT  <input id="weight"></div>
+    <br>
+    <button onclick="check_bmi()">Check BMI </button>
+</body>
+
+<script>
+
+
+    function check_bmi() {
+        let x = +document.getElementById('weight').value
+        let y = +document.getElementById('height').value
+        console.log(x)
+        console.log(y)
+
+        BMI = x / (y * y)
+        console.log(BMI)
+        if (BMI < 18){
+            document.getElementById('output').innerHTML = ' Đang thiếu cân ' + BMI
+        }
+        else if (BMI < 25){
+            document.getElementById('output').innerHTML = 'Cơ thể bình thường ' + BMI
+            console.log('output2')
+        }
+        else  if(BMI < 30 ){
+            document.getElementById('output').innerHTML = ' Cơ thể thừa cân ' + BMI
+        }
+        else {
+            document.getElementById('output').innerHTML = 'Béo phì ' + BMI
+        }
+    }
+
+</script>
+</html>
